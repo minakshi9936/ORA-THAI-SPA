@@ -45,7 +45,7 @@ const galleryImages = [
     category: 'Treatments',
   },
   {
-    url: 'https://images.pexels.com/photos/7188019/pexels-photo-7188019.jpeg?auto=compress&cs=tinysrgb&w=800',
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRjyYmRBIS1UzILFJAFB6raxlpf3GH2j7UxA&s',
     alt: 'Spa accessories',
     category: 'Products',
   },
