@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'ORA Thai Spa Lucknow - Authentic Thai Massage & Wellness Center',
     description: 'Experience the ultimate relaxation at ORA Thai Spa Lucknow, India\'s leading authentic Thai massage and wellness center. Our skilled therapists provide traditional Thai massage, aromatherapy, reflexology, and various rejuvenating spa treatments in a serene and luxurious environment.',
-    url: 'https://orathailucknow.com',
+    url: 'https://ora-thai-spa.netlify.app/',
     siteName: 'ORA Thai Spa Lucknow',
     images: [
       {
