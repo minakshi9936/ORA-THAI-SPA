@@ -7,23 +7,21 @@ export default function TopBar() {
         <div className="flex flex-wrap items-center gap-4 md:gap-6 justify-center md:justify-start">
           <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-accent transition-colors">
             <Phone className="h-4 w-4" />
-            <span>+91-6389202030</span>
+            <span>+91-9838686121</span>
           </a>
           <div className="flex items-center gap-2">
             <MapPin className="h-4 w-4" />
-            <span>123, citywitty office</span>
+            <span>Cp 166,Near Singapore Mall, Viraj Khand, Gomti Nagar Lucknow226016, Lucknow</span>
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <a href="#" className="hover:text-accent transition-colors" aria-label="Facebook">
+          <a href="https://www.facebook.com/ORAThaiSpa/" className="hover:text-accent transition-colors" aria-label="Facebook">
             <Facebook className="h-4 w-4" />
           </a>
-          <a href="#" className="hover:text-accent transition-colors" aria-label="Instagram">
+          <a href="https://www.instagram.com/ora.thaispa?igsh=MWNnOTl1Ymx3ZTN0bg==" className="hover:text-accent transition-colors" aria-label="Instagram">
             <Instagram className="h-4 w-4" />
           </a>
-          <a href="#" className="hover:text-accent transition-colors" aria-label="Twitter">
-            <Twitter className="h-4 w-4" />
-          </a>
+          
         </div>
       </div>
     </div>

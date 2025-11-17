@@ -1,4 +1,4 @@
-import { Sparkles, Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Sparkles, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const quickLinks = [
@@ -36,33 +36,20 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/ORAThaiSpa/"
                 className="bg-primary-foreground/10 hover:bg-accent p-3 rounded-full transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/ora.thaispa?igsh=MWNnOTl1Ymx3ZTN0bg=="
                 className="bg-primary-foreground/10 hover:bg-accent p-3 rounded-full transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a
-                href="#"
-                className="bg-primary-foreground/10 hover:bg-accent p-3 rounded-full transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="bg-primary-foreground/10 hover:bg-accent p-3 rounded-full transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
+              
             </div>
           </div>
 
@@ -104,25 +91,25 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/80">
-                  123, citywitty office
+                  Cp 166,Near Singapore Mall, Viraj Khand, Gomti Nagar Lucknow226016 , Lucknow
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
                 <a
-                  href="tel:+6389202030"
+                  href="tel:+9838686121"
                   className="text-primary-foreground/80 hover:text-accent transition-colors"
                 >
-                  +91-6389202030
+                  +91-9838686121
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent shrink-0" />
                 <a
                   href="mailto:info@orathaispa.com"
-                  className="text-primary-foreground/80 hover:text-accent transition-colors"
+                  className="text-primary-foreground/80 transition-colors"
                 >
-                  info@orathaispa.com
+                 orathaispa.lucknow@gmail.com
                 </a>
               </li>
             </ul>

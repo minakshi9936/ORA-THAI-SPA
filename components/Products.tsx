@@ -2,7 +2,7 @@ import { ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
-const phoneNumber = '+6389202030';
+const phoneNumber = '+9838686121';
 
 const products = [
   {

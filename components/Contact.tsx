@@ -16,7 +16,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const phoneNumber = '+6389202030';
+    const phoneNumber = '+9838686121';
     const message = `Hello! My name is ${formData.name}. Email: ${formData.email}. Phone: ${formData.phone}. Message: ${formData.message}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -26,22 +26,22 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Location',
-      content: '123, citywitty office',
+      content: 'Cp 166,Near Singapore Mall, Viraj Khand, Gomti Nagar Lucknow226016 , Lucknow',
     },
     {
       icon: Phone,
       title: 'Phone',
-      content: '+91-6389202030',
+      content: '+91-9838686121',
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'info@citywitty.com',
+      content: 'orathaispa.lucknow@gmail.com',
     },
     {
       icon: Clock,
       title: 'Hours',
-      content: 'Mon - Sun: 9:00 AM - 9:00 PM',
+      content: 'Mon - Sun: 10:00 AM - 11:00 PM',
     },
   ];
 
@@ -150,18 +150,19 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg h-80">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.6494724076987!2d100.52604831484059!3d13.743032190350338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed269c9d305%3A0x17a00479c324b61b!2sBangkok%2C%20Thailand!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Ora Thai Spa Location"
-              ></iframe>
-            </div>
+           <div className="bg-white rounded-2xl overflow-hidden shadow-lg h-80">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28476.116682176536!2d80.9846831743164!3d26.855387400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3cfc1e855af%3A0x3af157c1de808484!2sORA%20Thai%20Spa!5e0!3m2!1sen!2sin!4v1763361807640!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Ora Thai Spa Location"
+  ></iframe>
+</div>
+
           </div>
         </div>
       </div>

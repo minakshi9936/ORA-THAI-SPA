@@ -1,3 +1,5 @@
+'use client';
+
 import { Check, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -5,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 const pricingTiers = [
   {
     name: 'Essential',
-    price: 89,
+    price: 7901,
     duration: '60 minutes',
     description: 'Perfect for first-time visitors or quick relaxation',
     features: [
@@ -19,7 +21,7 @@ const pricingTiers = [
   },
   {
     name: 'Premium',
-    price: 159,
+    price: 14111,
     duration: '90 minutes',
     description: 'Our most popular package for complete rejuvenation',
     features: [
@@ -35,7 +37,7 @@ const pricingTiers = [
   },
   {
     name: 'Signature',
-    price: 249,
+    price: 22100,
     duration: '120 minutes',
     description: 'Ultimate luxury spa experience',
     features: [
@@ -52,7 +54,7 @@ const pricingTiers = [
   },
   {
     name: 'Couples Retreat',
-    price: 399,
+    price: 35400,
     duration: '120 minutes',
     description: 'Share a blissful experience together',
     features: [
@@ -67,6 +69,20 @@ const pricingTiers = [
     popular: false,
   },
 ];
+
+const handleBookNow = (packageName: string) => {
+  const phoneNumber = '9838686121';
+  const message = `Hi, I would like to book the ${packageName} package.`;
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(whatsappUrl, '_blank');
+};
+
+const handleSpeakWithConsultant = () => {
+  const phoneNumber = '9838686121';
+  const message = 'Hi, I would like to speak with a spa consultant.';
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(whatsappUrl, '_blank');
+};
 
 export default function Pricing() {
   return (
@@ -107,7 +123,7 @@ export default function Pricing() {
 
                 <div className="mb-6">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-4xl font-bold text-primary">${tier.price}</span>
+                    <span className="text-4xl font-bold text-primary">₹{tier.price}</span>
                     <span className="text-muted-foreground">/ {tier.duration}</span>
                   </div>
                 </div>
@@ -122,6 +138,7 @@ export default function Pricing() {
                 </ul>
 
                 <Button
+                  onClick={() => handleBookNow(tier.name)}
                   className={`w-full ${
                     tier.popular
                       ? 'bg-accent hover:bg-accent/90 text-white'
@@ -140,7 +157,12 @@ export default function Pricing() {
           <p className="text-muted-foreground mb-4">
             Not sure which package is right for you?
           </p>
-          <Button variant="outline" size="lg" className="border-2 border-accent text-accent hover:bg-accent hover:text-white">
+          <Button
+            onClick={handleSpeakWithConsultant}
+            variant="outline"
+            size="lg"
+            className="border-2 border-accent text-accent hover:bg-accent hover:text-white"
+          >
             Speak with Our Spa Consultant
           </Button>
         </div>

@@ -18,7 +18,7 @@ export default function Navbar() {
   }, []);
 
   const handleBookAppointment = () => {
-    const phoneNumber = '+6389202030';
+    const phoneNumber = '+9838686121';
     const message = 'Hello! I would like to book an appointment at Ora Thai Spa.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

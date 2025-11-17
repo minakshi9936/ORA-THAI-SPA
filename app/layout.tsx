@@ -8,8 +8,25 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 
 export const metadata: Metadata = {
-  title: 'Ora Thai Spa - Premium Thai Massage & Wellness',
-  description: 'Experience authentic Thai massage and wellness treatments in a serene, luxurious environment. Book your spa appointment today.',
+  title: 'ORA Thai Spa Lucknow - Authentic Thai Massage & Wellness Center',
+  description: 'Experience the ultimate relaxation at ORA Thai Spa Lucknow, India\'s leading authentic Thai massage and wellness center. Our skilled therapists provide traditional Thai massage, aromatherapy, reflexology, and various rejuvenating spa treatments in a serene and luxurious environment. Located in Gomti Nagar, Lucknow, we specialize in promoting physical and mental well-being through ancient healing techniques. From deep tissue massages to holistic wellness therapies, discover your path to rejuvenation. Book your appointment today for a transformative wellness experience that will leave you refreshed and revitalized.',
+  keywords: ['Thai massage Lucknow', 'authentic Thai spa', 'traditional massage', 'aromatherapy massage', 'foot reflexology', 'wellness center Lucknow', 'spa treatments', 'rejuvenation therapy', 'Gomti Nagar spa', 'spa in lucknow'],
+  openGraph: {
+    title: 'ORA Thai Spa Lucknow - Authentic Thai Massage & Wellness Center',
+    description: 'Experience the ultimate relaxation at ORA Thai Spa Lucknow, India\'s leading authentic Thai massage and wellness center. Our skilled therapists provide traditional Thai massage, aromatherapy, reflexology, and various rejuvenating spa treatments in a serene and luxurious environment.',
+    url: 'https://orathailucknow.com',
+    siteName: 'ORA Thai Spa Lucknow',
+    images: [
+      {
+        url: '/favicon.png',
+        width: 1200,
+        height: 630,
+        alt: 'ORA Thai Spa Lucknow - Authentic Thai Massage & Wellness Center',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
   icons: [
     { rel: 'icon', url: '/favicon.ico' },
     { rel: 'icon', url: '/favicon-16x16.png', sizes: '16x16' },

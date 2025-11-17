@@ -52,7 +52,7 @@ export default function InquiryPopup() {
 
   const onSubmit = (data: FormData) => {
     const message = `Inquiry from: Name: ${data.name}, Phone: ${data.phone}, Email: ${data.email}`;
-    const whatsappUrl = `https://wa.me/+6389202030?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+9838686121?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     setSubmitted(true);
   };
