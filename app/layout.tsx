@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'ORA Thai Spa Lucknow',
     images: [
       {
-        url: '/favicon.png',
+        url: '/favicon.ico',
         width: 1200,
         height: 630,
         alt: 'ORA Thai Spa Lucknow - Authentic Thai Massage & Wellness Center',
