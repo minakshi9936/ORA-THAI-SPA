@@ -1,12 +1,20 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Flower2, Footprints, Sparkles, Leaf, Heart, Waves, Sun, Droplets } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 
-const services = [
+interface Service {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+  image: string;
+  benefits: string[];
+}
+
+const services: Service[] = [
   {
     icon: Flower2,
     title: 'Traditional Thai Massage',
@@ -122,15 +130,15 @@ const services = [
 ];
 
 export default function Services() {
-  const [selectedService, setSelectedService] = useState(null);
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleLearnMore = (service) => {
+  const handleLearnMore = (service: Service) => {
     setSelectedService(service);
     setIsModalOpen(true);
   };
 
-  const handleBookNow = (serviceTitle) => {
+  const handleBookNow = (serviceTitle: string) => {
     const phoneNumber = '9838686121';
     const message = `Hi, I would like to book the ${serviceTitle} service.`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
